@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Asset/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script async src="script.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="home.html">
+                <img src="Asset/Logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="navbar-center">
+             <img src="Asset/TitleText.png" alt="">
+        </div>
+    
+        <div class="navbar-right">
+            <div class="dropdown">
+                <div class="dropdown-button">
+                    <a>Play Now</a>
+                </div>
+                <div class="dropdown-content">
+                    <a href="home.html">Home</a>
+                    <a href="screenshots.html">Screenshots</a>
+                    <a href="events.html">Events</a>
+                    <a href="characters.html">Characters</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="form-content">
+        <form action="" class="form-div" onsubmit="validateLogin(event.preventDefault());">
+            <h2>Log In to Your Account!</h2>
+            
+            <div class="input-div">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+    
+            <div class="input-div">
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+    
+            <div id="login-err-msg"></div>
+
+            <div class="playnow-button-div">
+                <button class="playnow-button" style="vertical-align:middle"><span>Login </span></button>
+                <h3><a href="https://www.google.com/" target="_blank">Forgot Password?</a></h3>
+            </div>
+
+            <div class="signup-div">
+                <h3>Don't have an account? <a href="playnow.html">Sign up</a></h3>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Copyright © 2010-2021 Frawlsalla Company S.L. All rights reserved.</h3>
+        </div>
+        <div class="footer-right">
+            <a href="https://twitter.com" target="_blank"><img src="Asset/TwitterLogo.png" alt=""></a>
+            <a href="https://instagram.com" target="_blank"><img src="Asset/InstagramLogo.png" alt=""></a>
+            <a href="https://facebook.com" target="_blank"><img src="Asset/facebookLogo.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Asset/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script async src="script.js"></script>
+    <title>Events</title>
+</head>
+<body onload="getDate(), hideOrShow('onGoingEvent', 'event-dropbtn2');">
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="home.html">
+                <img src="Asset/Logo.png" alt="" width="95px">
+            </a>
+        </div>
+
+        <div class="navbar-center">
+             <img src="Asset/TitleText.png" alt="" width="350px">
+        </div>
+    
+        <div class="navbar-right">
+            <div class="dropdown">
+                <div class="dropdown-button">
+                    <a>Event</a>
+                </div>
+                <div class="dropdown-content">
+                    <a href="home.html">Home</a>
+                    <a href="screenshots.html">Screenshots</a>
+                    <a href="characters.html">Characters</a>
+                    <a href="playnow.html">Play Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="event-content">
+        <h1>OUR EVENTS</h1>
+
+        <div class="current-date-div">
+            Current Date: <span id="currDate"></span>
+        </div>
+
+        <div class="event-content-buttons">
+
+            <div class="event-dropdown" id="event-dropdown2">
+                <button class="event-dropbtn" id="event-dropbtn1" onclick="hideOrShow('comingSoonEvent', 'event-dropbtn1')">Coming Soon</button>
+            </div>
+
+            <div class="event-dropdown" id="event-dropdown2">
+                <button class="event-dropbtn" id="event-dropbtn2" onclick="hideOrShow('onGoingEvent', 'event-dropbtn2')">On Going</button>
+            </div>
+
+            <div class="event-dropdown" id="event-dropdown3">
+                <button class="event-dropbtn" id="event-dropbtn3" onclick="hideOrShow('previousEvent', 'event-dropbtn3')">Previous</button>
+            </div>
+        </div>
+
+        <div class="main-event-content">
+
+            <div class="event-contents" id="comingSoonEvent">
+                <div class="event-details">
+                    <div class="event-image">
+                        <img src="Asset/Event5.jpg" alt="">
+                    </div>
+                    <div class="event-description">
+                        <b>HAPPY EID AL FITR: FREE WEAPONS</b>
+                        <br>Get the best weapons by free in our shop!
+                        <br><br>
+
+                        <b>HAPPY EID AL FITR: 7-DAY WEAPON</b>
+                        <br>Login to the game for two hours and get weapons that available for 7 days!
+                        <br>
+                    </div>
+                </div>
+                
+                <div class="event-details">
+                    <div class="event-image">
+                        <img src="Asset/Event4.png" alt="">
+                    </div>
+                    <div class="event-description">
+                        <b>ITEMS GIVEAWAY</b>
+                        <br>Login and get free weapons and other items directly!
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-contents" id="onGoingEvent">
+                <div class="event-details">
+                    <div class="event-image">
+                        <img src="Asset/Event6.jpg" alt="">
+                    </div>
+                    <div class="event-description">
+                        <b>PARADE RAMADAN: COLLECT THE WORD</b>
+                        <br>Complete the mission, collect the words and claim the gifts!
+                        <br><br>
+
+                        <b>PARADE RAMADAN: NEW TROOPERS EVENT</b>
+                        <br>Register now and get free weapons and characters!
+                        <br><br>
+
+                        <b>PARADE RAMADAN: WELCOME BACK TROOPERS</b>
+                        <br>Calling back troopers! Login back and get free items, weapons, and characters!
+                        <br>
+                    </div>
+                </div>
+
+                <div class="event-details">
+                    <div class="event-image">
+                        <img src="Asset/Event3.jpg" alt="">
+                    </div>
+                    <div class="event-description">
+                        <b>FRAWLSALLA'S 10TH ANNIVERSARY</b>
+                        <br>Login daily during our anniversary, get variety of gifts daily and unlock our limited anniversary weapon and character!
+                    </div>
+                </div>
+            </div>
+
+            <div class="event-contents" id="previousEvent">
+                <div class="event-details">
+                    <div class="event-image">
+                        <img src="Asset/Event2.png" alt="">
+                    </div>
+                    <div class="event-description">
+                        <b>HAPPY FASTING</b>
+                        <br>Login daily from 14th to 20th May 2019, get variety of gifts daily and unlock limited Ramadan boosters!
+                        <br>
+                    </div>
+                </div>
+                
+                <div class="event-details">
+                    <div class="event-image">
+                        <img src="Asset/Event1.png" alt="">
+                    </div>
+                    <div class="event-description">
+                        <b>WELCOMING RAMADAN 2019</b>
+                        <br>Login daily from 7th to 13th May 2019, get variety of gifts daily and unlock limited Ramadan boosters!
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Copyright © 2010-2021 Frawlsalla Company S.L. All rights reserved.</h3>
+        </div>
+        <div class="footer-right">
+            <a href="https://twitter.com" target="_blank"><img src="Asset/TwitterLogo.png" alt="" class="TWT"></a>
+            <a href="https://instagram.com" target="_blank"><img src="Asset/InstagramLogo.png" alt=""></a>
+            <a href="https://facebook.com" target="_blank"><img src="Asset/facebookLogo.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

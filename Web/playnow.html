@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Asset/Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script async src="script.js"></script>
+    <title>Play Now</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="home.html">
+                <img src="Asset/Logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="navbar-center">
+             <img src="Asset/TitleText.png" alt="">
+        </div>
+    
+        <div class="navbar-right">
+            <div class="dropdown">
+                <div class="dropdown-button">
+                    <a>Play Now</a>
+                </div>
+                <div class="dropdown-content">
+                    <a href="home.html">Home</a>
+                    <a href="screenshots.html">Screenshots</a>
+                    <a href="events.html">Events</a>
+                    <a href="characters.html">Characters</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="form-content">
+        <form action="" class="form-div" onsubmit="validateRegister(event.preventDefault());">
+            <h2>Create Your Account!</h2>
+            
+            <div class="input-div">
+                <input type="username" name="username" id="username" placeholder="Username (5 - 15 characters)">
+                <div class="err-msg" id="username-err-msg"></div>
+            </div>
+
+            <div class="input-div">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <div class="err-msg" id="email-err-msg"></div>
+            </div>
+    
+            <div class="input-div">
+                <input type="password" name="password" id="password" placeholder="Password (8-15 characters)">
+                <div class="err-msg" id="password-err-msg"></div>
+            </div>
+
+            <div class="input-div">
+                <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password">
+                <div class="err-msg" id="confirm-password-err-msg"></div>
+            </div>
+
+            <div class="input-div">
+                <input type="tel" name="telp" id="telp" placeholder="Phone Number (Please use international number format, ex: +6281234567890)">
+                <div class="err-msg" id="telp-err-msg"></div>
+            </div>
+
+            <div class="radio-div">
+                <div class="radio-div-title">
+                    <label for="gender">Gender</label>
+                </div>
+
+                <div class="radio-content">
+                    <input type="radio" name="gender" id="male" placeholder="Male">
+                    <label for="male">Male</label>
+                </div>
+
+                <div class="radio-content">
+                    <input type="radio" name="gender" id="female" placeholder="Female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="err-msg" id="gender-err-msg"></div>
+
+            <div class="input-div">
+                <textarea name="Address" id="address" placeholder="Address (Optional)"></textarea>
+            </div>
+
+            <div class="checkbox-div">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement"></a>I have read and agree to the <a href="https://www.google.com/" target="_blank">terms and conditions</a></label>
+            </div>
+            <div class="err-msg" id="agreement-err-msg"></div>
+
+            <div class="playnow-button-div">
+                <button class="playnow-button" style="vertical-align:middle">
+                    <span>Register </span>
+                </button>
+            </div>
+
+            <div class="login-text">
+                <h3>Already have an account? <a href="login.html">Log in here</a></h3>
+            </div>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Copyright © 2010-2021 Frawlsalla Company S.L. All rights reserved.</h3>
+        </div>
+        <div class="footer-right">
+            <a href="https://twitter.com" target="_blank"><img src="Asset/TwitterLogo.png" alt=""></a>
+            <a href="https://instagram.com" target="_blank"><img src="Asset/InstagramLogo.png" alt=""></a>
+            <a href="https://facebook.com" target="_blank"><img src="Asset/facebookLogo.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>
